@@ -272,9 +272,12 @@ section { position: relative; padding: 8rem 0; }
 ══════════════════════════════════════ */
 #hero {
   min-height: 100vh;
-  display: flex; align-items: center;
-  padding: 0;
+  display: flex;
+   flex-direction: column;
+   align-items: center;
+  padding: 2rem 1rem;
   overflow: hidden;
+   text-align: center;
 }
 #heroCanvas {
   position: absolute; inset: 0;
@@ -357,10 +360,16 @@ section { position: relative; padding: 8rem 0; }
 
 /* ── Hero 3D Visual ── */
 .hero-3d-wrap {
-  flex: 0 0 520px;
-  display: flex; align-items: center; justify-content: center;
-  position: relative; z-index: 2;
-  height: 100vh;
+  flex: 1 1 auto;
+   width: 100%;
+   max-width: 450px;
+  display: flex;
+   align-items: center;
+   justify-content: center;
+  position: relative;
+   z-index: 2;
+  height: auto;
+   margin-top: 2rem;
   animation: heroSlideInR .9s var(--ease-out) .5s both;
 }
 @keyframes heroSlideInR {
